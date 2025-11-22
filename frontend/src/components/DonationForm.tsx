@@ -42,7 +42,7 @@ const DonationForm = ({ onProceed }: DonationFormProps) => {
         </div>
 
         {/* Form Section */}
-        <div className="bg-white rounded-2xl shadow-2xl p-8 md:p-12">
+        <div className="p-8 md:p-12">
           <div className="space-y-6">
             <div className="text-center mb-8">
               <h1 className="text-4xl md:text-5xl font-bold text-gray-dark mb-3">

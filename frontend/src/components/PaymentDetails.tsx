@@ -42,7 +42,7 @@ const PaymentDetails = ({ amount, onBack, formData }: PaymentDetailsProps) => {
         </div>
 
         {/* Payment Form Section */}
-        <div className="bg-white rounded-2xl shadow-2xl p-8 md:p-12">
+        <div className="p-8 md:p-12">
           <div className="space-y-6">
             {/* Header */}
             <div className="text-center mb-8">
@@ -72,11 +72,13 @@ const PaymentDetails = ({ amount, onBack, formData }: PaymentDetailsProps) => {
                   onClick={() => setPaymentMethod("netbanking")}
                   className={`py-4 px-3 rounded-xl flex flex-col items-center gap-2 transition-all ${
                     paymentMethod === "netbanking"
-                      ? "bg-primary/10 border-2 border-primary"
-                      : "bg-white border-2 border-border hover:border-primary/50"
+                      ? "bg-primary/20 border-2 border-primary"
+                      : "bg-blue-100 border-2 border-border hover:border-primary/50"
                   }`}
                 >
-                  <Building2 className="h-8 w-8 text-gray-dark" />
+                  <div className="w-8 h-8 flex items-center justify-center">
+                    <img src="/net-banking.png" alt="Net Banking" className="w-8 h-8 object-contain" />
+                  </div>
                   <span className="text-sm font-medium text-gray-dark">
                     Net Banking
                   </span>
@@ -87,8 +89,8 @@ const PaymentDetails = ({ amount, onBack, formData }: PaymentDetailsProps) => {
                   onClick={() => setPaymentMethod("card")}
                   className={`py-4 px-3 rounded-xl flex flex-col items-center gap-2 transition-all ${
                     paymentMethod === "card"
-                      ? "bg-primary/10 border-2 border-primary"
-                      : "bg-white border-2 border-border hover:border-primary/50"
+                      ? "bg-primary/20 border-2 border-primary"
+                      : "bg-blue-100 border-2 border-border hover:border-primary/50"
                   }`}
                 >
                   <CreditCard className="h-8 w-8 text-gray-dark" />
@@ -102,8 +104,8 @@ const PaymentDetails = ({ amount, onBack, formData }: PaymentDetailsProps) => {
                   onClick={() => setPaymentMethod("upi")}
                   className={`py-4 px-3 rounded-xl flex flex-col items-center gap-2 relative transition-all ${
                     paymentMethod === "upi"
-                      ? "bg-primary/10 border-2 border-primary"
-                      : "bg-white border-2 border-border hover:border-primary/50"
+                      ? "bg-primary/20 border-2 border-primary"
+                      : "bg-blue-100 border-2 border-border hover:border-primary/50"
                   }`}
                 >
                   {paymentMethod === "upi" && (
@@ -117,7 +119,7 @@ const PaymentDetails = ({ amount, onBack, formData }: PaymentDetailsProps) => {
               </div>
 
               {/* Thank You Message */}
-              <div className="bg-accent/30 border border-primary/30 rounded-xl p-4 flex items-start gap-3">
+              <div className="bg-blue-100 border border-primary/30 rounded-xl p-4 flex items-start gap-3">
                 <ThumbsUp className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
                 <p className="text-sm text-primary font-medium">
                   Thanks for choosing our preferred mode of payment
@@ -125,22 +127,34 @@ const PaymentDetails = ({ amount, onBack, formData }: PaymentDetailsProps) => {
               </div>
 
               {/* Payment Options */}
-              <div className="grid grid-cols-4 gap-4">
-                <div className="flex flex-col items-center gap-2 p-3 rounded-xl border-2 border-border hover:border-primary transition-colors cursor-pointer">
-                  <div className="text-3xl">📦</div>
-                  <span className="text-xs font-medium text-gray-dark">Amazon Pay</span>
+              <div className="bg-blue-100 rounded-xl p-4 space-y-3">
+                <div className="flex justify-center gap-8">
+                  <div className="flex flex-col items-center gap-2 cursor-pointer">
+                    <div className="w-12 h-12 flex items-center justify-center bg-white rounded-full shadow-md border hover:shadow-lg transition-all">
+                      <img src="/amazon-pay.png" alt="Amazon Pay" className="w-8 h-8 object-contain" />
+                    </div>
+                    <span className="text-xs font-medium text-gray-dark">Amazon Pay</span>
+                  </div>
+                  <div className="flex flex-col items-center gap-2 cursor-pointer">
+                    <div className="w-12 h-12 flex items-center justify-center bg-white rounded-full shadow-md border hover:shadow-lg transition-all">
+                      <img src="/gpay.png" alt="Google Pay" className="w-8 h-8 object-contain" />
+                    </div>
+                    <span className="text-xs font-medium text-gray-dark">Google Pay</span>
+                  </div>
+                  <div className="flex flex-col items-center gap-2 cursor-pointer">
+                    <div className="w-12 h-12 flex items-center justify-center bg-white rounded-full shadow-md border hover:shadow-lg transition-all">
+                      <img src="/paytm.png" alt="Paytm" className="w-8 h-8 object-contain" />
+                    </div>
+                    <span className="text-xs font-medium text-gray-dark">Paytm</span>
+                  </div>
                 </div>
-                <div className="flex flex-col items-center gap-2 p-3 rounded-xl border-2 border-border hover:border-primary transition-colors cursor-pointer">
-                  <div className="text-3xl">G</div>
-                  <span className="text-xs font-medium text-gray-dark">Google Pay</span>
-                </div>
-                <div className="flex flex-col items-center gap-2 p-3 rounded-xl border-2 border-border hover:border-primary transition-colors cursor-pointer">
-                  <div className="text-3xl">💳</div>
-                  <span className="text-xs font-medium text-gray-dark">Paytm</span>
-                </div>
-                <div className="flex flex-col items-center gap-2 p-3 rounded-xl border-2 border-border hover:border-primary transition-colors cursor-pointer">
-                  <div className="text-3xl">☎️</div>
-                  <span className="text-xs font-medium text-gray-dark">Phone Pe</span>
+                <div className="flex justify-center">
+                  <div className="flex flex-col items-center gap-2 cursor-pointer">
+                    <div className="w-12 h-12 flex items-center justify-center bg-white rounded-full shadow-md border hover:shadow-lg transition-all">
+                      <img src="/phonepe.png" alt="PhonePe" className="w-8 h-8 object-contain" />
+                    </div>
+                    <span className="text-xs font-medium text-gray-dark">Phone Pe</span>
+                  </div>
                 </div>
               </div>
 
@@ -162,7 +176,7 @@ const PaymentDetails = ({ amount, onBack, formData }: PaymentDetailsProps) => {
               )}
 
               {/* Total Amount */}
-              <div className="bg-muted/50 rounded-xl p-5 space-y-2">
+              <div className="space-y-2">
                 <div className="flex items-center justify-between">
                   <span className="text-base font-semibold text-gray-dark">
                     Total Amount: ₹{totalAmount}/month
@@ -183,7 +197,7 @@ const PaymentDetails = ({ amount, onBack, formData }: PaymentDetailsProps) => {
               </Button>
 
               {/* Note */}
-              <div className="bg-accent/20 rounded-xl p-4">
+              <div className="">
                 <p className="text-xs text-gray-dark">
                   <span className="font-semibold">Note:</span> This Account will be
                   linked to the subscription and future payments will be charged
