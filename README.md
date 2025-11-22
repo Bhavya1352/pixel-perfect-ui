@@ -1,82 +1,53 @@
 # Pixel Perfect UI
 
-A modern donation platform built with React, TypeScript, and Tailwind CSS for social impact initiatives.
+## How can I edit this code?
 
-## Features
+**Use your preferred IDE**
 
-- **Responsive Design** - Works seamlessly on desktop and mobile devices
-- **Payment Integration** - Multiple payment options including UPI, Net Banking, and Credit Cards
-- **Modern UI** - Clean and intuitive user interface with smooth animations
-- **Payment Icons** - Integrated payment provider icons (Amazon Pay, Google Pay, Paytm, PhonePe)
+If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
-## Tech Stack
+The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-- **Frontend**: React 18, TypeScript
-- **Styling**: Tailwind CSS, shadcn/ui components
-- **Build Tool**: Vite
-- **Icons**: Lucide React
+Follow these steps:
 
-## Getting Started
+```sh
+# Step 1: Clone the repository using the project's Git URL.
+git clone <YOUR_GIT_URL>
 
-### Prerequisites
+# Step 2: Navigate to the project directory.
+cd <YOUR_PROJECT_NAME>
 
-- Node.js (v16 or higher)
-- npm or yarn
+# Step 3: Install the necessary dependencies.
+npm i
 
-### Installation
-
-1. Clone the repository
-```bash
-git clone https://github.com/Bhavya1352/pixel-perfect-ui.git
-cd pixel-perfect-ui
-```
-
-2. Navigate to frontend directory
-```bash
-cd frontend
-```
-
-3. Install dependencies
-```bash
-npm install
-```
-
-4. Start development server
-```bash
+# Step 4: Start the development server with auto-reloading and an instant preview.
 npm run dev
 ```
 
-5. Open your browser and visit `http://localhost:5173`
+**Edit a file directly in GitHub**
 
-## Available Scripts
+- Navigate to the desired file(s).
+- Click the "Edit" button (pencil icon) at the top right of the file view.
+- Make your changes and commit the changes.
 
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build
-- `npm run lint` - Run ESLint
+**Use GitHub Codespaces**
 
-## Project Structure
+- Navigate to the main page of your repository.
+- Click on the "Code" button (green button) near the top right.
+- Select the "Codespaces" tab.
+- Click on "New codespace" to launch a new Codespace environment.
+- Edit files directly within the Codespace and commit and push your changes once you're done.
 
-```
-frontend/
-├── public/           # Static assets and payment icons
-├── src/
-│   ├── components/   # React components
-│   ├── hooks/        # Custom hooks
-│   ├── lib/          # Utility functions
-│   └── pages/        # Page components
-├── package.json
-└── vite.config.ts
-```
+## What technologies are used for this project?
 
-## Contributing
+This project is built with:
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+- Vite
+- TypeScript
+- React
+- shadcn-ui
+- Tailwind CSS
 
-## License
+## How can I deploy this project?
 
-This project is open source and available under the [MIT License](LICENSE).
+You can deploy this project using any static hosting service like Vercel, Netlify, or GitHub Pages.
