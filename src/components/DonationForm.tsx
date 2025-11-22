@@ -1,4 +1,4 @@
- import { useState } from "react";
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { User, Mail, Phone } from "lucide-react";
@@ -119,7 +119,7 @@ const DonationForm = ({ onProceed }: DonationFormProps) => {
 
               {/* Name Field */}
               <div className="relative">
-                <img src="/name-logo.png" alt="Contact" className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5" />
+                <img src="/name-logo.png" alt="Name" className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5" />
                 <Input
                   type="text"
                   placeholder="Name *"
@@ -150,8 +150,10 @@ const DonationForm = ({ onProceed }: DonationFormProps) => {
               {/* Phone Field */}
               <div className="relative">
                 <div className="absolute left-4 top-1/2 -translate-y-1/2 flex items-center gap-2">
-                  <span className="text-2xl">🇮🇳</span>
-                  <span className="text-gray-text">+</span>
+                  <img src="https://flagcdn.com/w20/in.png" alt="India" className="h-5 w-5" />
+                  <select className="bg-transparent text-transparent text-sm border-none outline-none">
+                    <option value="+91"></option>
+                  </select>
                 </div>
                 <img src="/phone-logo.png" alt="Phone" className="absolute right-4 top-1/2 -translate-y-1/2 h-5 w-5" />
                 <Input
