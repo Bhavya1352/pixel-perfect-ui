@@ -185,8 +185,8 @@ const DonationForm = ({ onProceed }: DonationFormProps) => {
                   <div className="w-8 h-8 rounded-full bg-primary/50 border-2 border-white" />
                 </div>
                 <p className="text-sm">
-                  <span className="font-bold text-primary">4,21,908</span>{" "}
-                  <span className="text-primary">contributors are giving monthly</span>
+                  <span className="font-bold text-blue-500">4,21,908</span>{" "}
+                  <span className="text-blue-500">contributors are giving monthly</span>
                 </p>
               </div>
 
