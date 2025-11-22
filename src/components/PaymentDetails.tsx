@@ -75,8 +75,8 @@ const PaymentDetails = ({ amount, onBack, formData }: PaymentDetailsProps) => {
                   onClick={() => setPaymentMethod("netbanking")}
                   className={`py-4 px-3 rounded-xl flex flex-col items-center gap-2 transition-all ${
                     paymentMethod === "netbanking"
-                      ? "bg-blue-200 border-2 border-blue-500"
-                      : "bg-blue-100 border-2 border-border hover:border-blue-500/50"
+                      ? "bg-blue-300 border-2 border-blue-400"
+                      : "bg-blue-100 border-2 border-border hover:border-blue-300/50"
                   }`}
                 >
                   <div className="w-8 h-8 flex items-center justify-center">
@@ -92,8 +92,8 @@ const PaymentDetails = ({ amount, onBack, formData }: PaymentDetailsProps) => {
                   onClick={() => setPaymentMethod("card")}
                   className={`py-4 px-3 rounded-xl flex flex-col items-center gap-2 transition-all ${
                     paymentMethod === "card"
-                      ? "bg-blue-200 border-2 border-blue-500"
-                      : "bg-blue-100 border-2 border-border hover:border-blue-500/50"
+                      ? "bg-blue-300 border-2 border-blue-400"
+                      : "bg-blue-100 border-2 border-border hover:border-blue-300/50"
                   }`}
                 >
                   <CreditCard className="h-8 w-8 text-gray-dark" />
@@ -107,24 +107,24 @@ const PaymentDetails = ({ amount, onBack, formData }: PaymentDetailsProps) => {
                   onClick={() => setPaymentMethod("upi")}
                   className={`py-4 px-3 rounded-xl flex flex-col items-center gap-2 relative transition-all ${
                     paymentMethod === "upi"
-                      ? "bg-blue-200 border-2 border-blue-500"
-                      : "bg-blue-100 border-2 border-border hover:border-blue-500/50"
+                      ? "bg-blue-300 border-2 border-blue-400"
+                      : "bg-blue-100 border-2 border-border hover:border-blue-300/50"
                   }`}
                 >
                   {paymentMethod === "upi" && (
-                    <span className="absolute -top-2 -right-2 bg-blue-500 text-white text-xs px-2 py-0.5 rounded-full font-semibold">
+                    <span className="absolute -top-2 -right-2 bg-blue-300 text-white text-xs px-2 py-0.5 rounded-full font-semibold">
                       RECOMMENDED
                     </span>
                   )}
-                  <div className="text-2xl font-bold text-blue-500">UPI</div>
+                  <div className="text-2xl font-bold text-blue-300">UPI</div>
                   <span className="text-sm font-medium text-gray-dark">UPI</span>
                 </button>
               </div>
 
               {/* Thank You Message */}
-              <div className="bg-blue-100 border border-blue-500/30 rounded-xl p-4 flex items-start gap-3">
-                <ThumbsUp className="h-5 w-5 text-blue-500 flex-shrink-0 mt-0.5" />
-                <p className="text-sm text-blue-500 font-medium">
+              <div className="bg-blue-100 border border-blue-300/30 rounded-xl p-4 flex items-start gap-3">
+                <ThumbsUp className="h-5 w-5 text-blue-300 flex-shrink-0 mt-0.5" />
+                <p className="text-sm text-blue-300 font-medium">
                   Thanks for choosing our preferred mode of payment
                 </p>
               </div>
@@ -194,7 +194,7 @@ const PaymentDetails = ({ amount, onBack, formData }: PaymentDetailsProps) => {
               {/* Submit Button */}
               <Button
                 type="submit"
-                className="w-full h-14 text-lg font-semibold bg-blue-500 hover:bg-blue-600 text-white rounded-xl shadow-lg transition-all hover:scale-[1.02]"
+                className="w-full h-14 text-lg font-semibold bg-blue-300 hover:bg-blue-400 text-white rounded-xl shadow-lg transition-all hover:scale-[1.02]"
               >
                 Pledge ₹{totalAmount} / Month
               </Button>

@@ -70,8 +70,8 @@ const DonationForm = ({ onProceed }: DonationFormProps) => {
                     }}
                     className={`py-4 px-4 rounded-xl text-base font-semibold transition-all ${
                       selectedAmount === 200 && !customAmount
-                        ? "bg-blue-500 text-white shadow-lg scale-105"
-                        : "bg-white border-2 border-border text-gray-dark hover:border-blue-500"
+                        ? "bg-blue-300 text-white shadow-lg scale-105"
+                        : "bg-white border-2 border-border text-gray-dark hover:border-blue-300"
                     }`}
                   >
                     ₹200<span className="text-sm">/mo</span>
@@ -84,8 +84,8 @@ const DonationForm = ({ onProceed }: DonationFormProps) => {
                     }}
                     className={`py-4 px-4 rounded-xl text-base font-semibold transition-all ${
                       selectedAmount === 300 && !customAmount
-                        ? "bg-blue-500 text-white shadow-lg scale-105"
-                        : "bg-white border-2 border-border text-gray-dark hover:border-blue-500"
+                        ? "bg-blue-300 text-white shadow-lg scale-105"
+                        : "bg-white border-2 border-border text-gray-dark hover:border-blue-300"
                     }`}
                   >
                     ₹300<span className="text-sm">/mo</span>
@@ -98,8 +98,8 @@ const DonationForm = ({ onProceed }: DonationFormProps) => {
                     }}
                     className={`py-4 px-4 rounded-xl text-base font-semibold transition-all ${
                       selectedAmount === 500 && !customAmount
-                        ? "bg-blue-500 text-white shadow-lg scale-105"
-                        : "bg-white border-2 border-border text-gray-dark hover:border-blue-500"
+                        ? "bg-blue-300 text-white shadow-lg scale-105"
+                        : "bg-white border-2 border-border text-gray-dark hover:border-blue-300"
                     }`}
                   >
                     ₹500<span className="text-sm">/mo</span>
@@ -111,7 +111,7 @@ const DonationForm = ({ onProceed }: DonationFormProps) => {
                   placeholder="Other Amount"
                   value={customAmount}
                   onChange={(e) => setCustomAmount(e.target.value)}
-                  className="h-14 text-base rounded-xl border-2 focus:border-blue-500"
+                  className="h-14 text-base rounded-xl border-2 focus:border-blue-300"
                 />
               </div>
 
@@ -126,7 +126,7 @@ const DonationForm = ({ onProceed }: DonationFormProps) => {
                     setFormData({ ...formData, name: e.target.value })
                   }
                   required
-                  className="h-14 pl-12 text-base rounded-xl border-2 focus:border-blue-500"
+                  className="h-14 pl-12 text-base rounded-xl border-2 focus:border-blue-300"
                 />
               </div>
 
@@ -141,7 +141,7 @@ const DonationForm = ({ onProceed }: DonationFormProps) => {
                     setFormData({ ...formData, email: e.target.value })
                   }
                   required
-                  className="h-14 pl-12 text-base rounded-xl border-2 focus:border-blue-500"
+                  className="h-14 pl-12 text-base rounded-xl border-2 focus:border-blue-300"
                 />
               </div>
 
@@ -160,7 +160,7 @@ const DonationForm = ({ onProceed }: DonationFormProps) => {
                     setFormData({ ...formData, phone: e.target.value })
                   }
                   required
-                  className="h-14 pl-20 pr-12 text-base rounded-xl border-2 focus:border-blue-500"
+                  className="h-14 pl-20 pr-12 text-base rounded-xl border-2 focus:border-blue-300"
                 />
               </div>
 
@@ -171,7 +171,7 @@ const DonationForm = ({ onProceed }: DonationFormProps) => {
               {/* Submit Button */}
               <Button
                 type="submit"
-                className="w-full h-14 text-lg font-semibold bg-blue-500 hover:bg-blue-600 text-white rounded-xl shadow-lg transition-all hover:scale-[1.02]"
+                className="w-full h-14 text-lg font-semibold bg-blue-300 hover:bg-blue-400 text-white rounded-xl shadow-lg transition-all hover:scale-[1.02]"
               >
                 Pledge ₹{customAmount || selectedAmount} / Month
               </Button>
@@ -179,25 +179,25 @@ const DonationForm = ({ onProceed }: DonationFormProps) => {
               {/* Contributors Info */}
               <div className="flex items-center justify-center gap-2 pt-2">
                 <div className="flex -space-x-2">
-                  <div className="w-8 h-8 rounded-full bg-blue-500/20 border-2 border-white" />
-                  <div className="w-8 h-8 rounded-full bg-blue-500/30 border-2 border-white" />
-                  <div className="w-8 h-8 rounded-full bg-blue-500/40 border-2 border-white" />
-                  <div className="w-8 h-8 rounded-full bg-blue-500/50 border-2 border-white" />
+                  <div className="w-8 h-8 rounded-full bg-blue-300/20 border-2 border-white" />
+                  <div className="w-8 h-8 rounded-full bg-blue-300/30 border-2 border-white" />
+                  <div className="w-8 h-8 rounded-full bg-blue-300/40 border-2 border-white" />
+                  <div className="w-8 h-8 rounded-full bg-blue-300/50 border-2 border-white" />
                 </div>
                 <p className="text-sm">
-                  <span className="font-bold text-blue-500">4,21,908</span>{" "}
-                  <span className="text-blue-500">contributors are giving monthly</span>
+                  <span className="font-bold text-blue-300">4,21,908</span>{" "}
+                  <span className="text-blue-300">contributors are giving monthly</span>
                 </p>
               </div>
 
               {/* Privacy Links */}
               <p className="text-xs text-gray-text text-center pt-4">
                 This site is protected by reCAPTCHA and the Google{" "}
-                <a href="#" className="text-blue-500 hover:underline">
+                <a href="#" className="text-blue-300 hover:underline">
                   Privacy Policy
                 </a>{" "}
                 and{" "}
-                <a href="#" className="text-blue-500 hover:underline">
+                <a href="#" className="text-blue-300 hover:underline">
                   Terms of Service
                 </a>{" "}
                 apply.
