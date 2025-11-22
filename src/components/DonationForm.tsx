@@ -38,6 +38,8 @@ const DonationForm = ({ onProceed }: DonationFormProps) => {
             src={heroImage}
             alt="Social Impact - Empowering communities through education and healthcare"
             className="w-full max-w-xl rounded-2xl shadow-lg object-cover"
+            loading="eager"
+            decoding="async"
           />
         </div>
 

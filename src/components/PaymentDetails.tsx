@@ -38,6 +38,8 @@ const PaymentDetails = ({ amount, onBack, formData }: PaymentDetailsProps) => {
             src={heroImage}
             alt="Social Impact - Empowering communities"
             className="w-full max-w-xl rounded-2xl shadow-lg object-cover"
+            loading="eager"
+            decoding="async"
           />
         </div>
 
