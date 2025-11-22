@@ -18,7 +18,7 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 210 15% 20%;
 
-    --primary: 200 100% 70%;
+    --primary: 210 100% 60%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 210 40% 96%;
@@ -35,12 +35,12 @@ All colors MUST be HSL.
 
     --border: 210 20% 85%;
     --input: 210 20% 90%;
-    --ring: 200 100% 70%;
+    --ring: 210 100% 60%;
 
     --radius: 0.75rem;
     
     /* Custom donation theme colors */
-    --cyan-primary: 200 100% 70%;
+    --cyan-primary: 210 100% 60%;
     --cyan-light: 200 100% 85%;
     --gray-text: 210 10% 45%;
     --gray-dark: 210 15% 25%;
