@@ -1,4 +1,4 @@
-import { useState } from "react";
+ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { User, Mail, Phone } from "lucide-react";
@@ -70,8 +70,8 @@ const DonationForm = ({ onProceed }: DonationFormProps) => {
                     }}
                     className={`py-4 px-4 rounded-xl text-base font-semibold transition-all ${
                       selectedAmount === 200 && !customAmount
-                        ? "bg-blue-300 text-white shadow-lg scale-105"
-                        : "bg-white border-2 border-border text-gray-dark hover:border-blue-300"
+                        ? "bg-cyan-300 text-white shadow-lg scale-105"
+                        : "bg-cyan-100 border-2 border-border text-gray-dark hover:bg-cyan-200 hover:border-cyan-200"
                     }`}
                   >
                     ₹200<span className="text-sm">/mo</span>
@@ -84,8 +84,8 @@ const DonationForm = ({ onProceed }: DonationFormProps) => {
                     }}
                     className={`py-4 px-4 rounded-xl text-base font-semibold transition-all ${
                       selectedAmount === 300 && !customAmount
-                        ? "bg-blue-300 text-white shadow-lg scale-105"
-                        : "bg-white border-2 border-border text-gray-dark hover:border-blue-300"
+                        ? "bg-cyan-300 text-white shadow-lg scale-105"
+                        : "bg-cyan-100 border-2 border-border text-gray-dark hover:bg-cyan-200 hover:border-cyan-200"
                     }`}
                   >
                     ₹300<span className="text-sm">/mo</span>
@@ -98,8 +98,8 @@ const DonationForm = ({ onProceed }: DonationFormProps) => {
                     }}
                     className={`py-4 px-4 rounded-xl text-base font-semibold transition-all ${
                       selectedAmount === 500 && !customAmount
-                        ? "bg-blue-300 text-white shadow-lg scale-105"
-                        : "bg-white border-2 border-border text-gray-dark hover:border-blue-300"
+                        ? "bg-cyan-300 text-white shadow-lg scale-105"
+                        : "bg-cyan-100 border-2 border-border text-gray-dark hover:bg-cyan-200 hover:border-cyan-200"
                     }`}
                   >
                     ₹500<span className="text-sm">/mo</span>
@@ -111,7 +111,7 @@ const DonationForm = ({ onProceed }: DonationFormProps) => {
                   placeholder="Other Amount"
                   value={customAmount}
                   onChange={(e) => setCustomAmount(e.target.value)}
-                  className="h-14 text-base rounded-xl border-2 focus:border-blue-300"
+                  className="h-14 text-base rounded-xl border-2 focus:border-cyan-100"
                 />
               </div>
 
@@ -126,7 +126,7 @@ const DonationForm = ({ onProceed }: DonationFormProps) => {
                     setFormData({ ...formData, name: e.target.value })
                   }
                   required
-                  className="h-14 pl-12 text-base rounded-xl border-2 focus:border-blue-300"
+                  className="h-14 pl-12 text-base rounded-xl border-2 focus:border-cyan-100"
                 />
               </div>
 
@@ -141,7 +141,7 @@ const DonationForm = ({ onProceed }: DonationFormProps) => {
                     setFormData({ ...formData, email: e.target.value })
                   }
                   required
-                  className="h-14 pl-12 text-base rounded-xl border-2 focus:border-blue-300"
+                  className="h-14 pl-12 text-base rounded-xl border-2 focus:border-cyan-100"
                 />
               </div>
 
@@ -160,7 +160,7 @@ const DonationForm = ({ onProceed }: DonationFormProps) => {
                     setFormData({ ...formData, phone: e.target.value })
                   }
                   required
-                  className="h-14 pl-20 pr-12 text-base rounded-xl border-2 focus:border-blue-300"
+                  className="h-14 pl-20 pr-12 text-base rounded-xl border-2 focus:border-cyan-100"
                 />
               </div>
 
@@ -171,7 +171,7 @@ const DonationForm = ({ onProceed }: DonationFormProps) => {
               {/* Submit Button */}
               <Button
                 type="submit"
-                className="w-full h-14 text-lg font-semibold bg-blue-300 hover:bg-blue-400 text-white rounded-xl shadow-lg transition-all hover:scale-[1.02]"
+                className="w-full h-14 text-lg font-semibold bg-cyan-300 hover:bg-cyan-400 text-white rounded-xl shadow-lg transition-all hover:scale-[1.02]"
               >
                 Pledge ₹{customAmount || selectedAmount} / Month
               </Button>
@@ -179,25 +179,25 @@ const DonationForm = ({ onProceed }: DonationFormProps) => {
               {/* Contributors Info */}
               <div className="flex items-center justify-center gap-2 pt-2">
                 <div className="flex -space-x-2">
-                  <div className="w-8 h-8 rounded-full bg-blue-300/20 border-2 border-white" />
-                  <div className="w-8 h-8 rounded-full bg-blue-300/30 border-2 border-white" />
-                  <div className="w-8 h-8 rounded-full bg-blue-300/40 border-2 border-white" />
-                  <div className="w-8 h-8 rounded-full bg-blue-300/50 border-2 border-white" />
+                  <div className="w-8 h-8 rounded-full bg-cyan-100/20 border-2 border-white" />
+                  <div className="w-8 h-8 rounded-full bg-cyan-100/30 border-2 border-white" />
+                  <div className="w-8 h-8 rounded-full bg-cyan-100/40 border-2 border-white" />
+                  <div className="w-8 h-8 rounded-full bg-cyan-100/50 border-2 border-white" />
                 </div>
                 <p className="text-sm">
-                  <span className="font-bold text-blue-300">4,21,908</span>{" "}
-                  <span className="text-blue-300">contributors are giving monthly</span>
+                  <span className="font-bold text-cyan-600">4,21,908</span>{" "}
+                  <span className="text-cyan-600">contributors are giving monthly</span>
                 </p>
               </div>
 
               {/* Privacy Links */}
               <p className="text-xs text-gray-text text-center pt-4">
                 This site is protected by reCAPTCHA and the Google{" "}
-                <a href="#" className="text-blue-300 hover:underline">
+                <a href="#" className="text-cyan-600 hover:underline">
                   Privacy Policy
                 </a>{" "}
                 and{" "}
-                <a href="#" className="text-blue-300 hover:underline">
+                <a href="#" className="text-cyan-600 hover:underline">
                   Terms of Service
                 </a>{" "}
                 apply.

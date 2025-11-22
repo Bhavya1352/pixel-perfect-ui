@@ -75,8 +75,8 @@ const PaymentDetails = ({ amount, onBack, formData }: PaymentDetailsProps) => {
                   onClick={() => setPaymentMethod("netbanking")}
                   className={`py-4 px-3 rounded-xl flex flex-col items-center gap-2 transition-all ${
                     paymentMethod === "netbanking"
-                      ? "bg-blue-300 border-2 border-blue-400"
-                      : "bg-blue-100 border-2 border-border hover:border-blue-300/50"
+                      ? "bg-cyan-300 border-2 border-cyan-400"
+                      : "bg-cyan-100 border-2 border-border hover:bg-cyan-200 hover:border-cyan-200/50"
                   }`}
                 >
                   <div className="w-8 h-8 flex items-center justify-center">
@@ -92,11 +92,11 @@ const PaymentDetails = ({ amount, onBack, formData }: PaymentDetailsProps) => {
                   onClick={() => setPaymentMethod("card")}
                   className={`py-4 px-3 rounded-xl flex flex-col items-center gap-2 transition-all ${
                     paymentMethod === "card"
-                      ? "bg-blue-300 border-2 border-blue-400"
-                      : "bg-blue-100 border-2 border-border hover:border-blue-300/50"
+                      ? "bg-cyan-300 border-2 border-cyan-400"
+                      : "bg-cyan-100 border-2 border-border hover:bg-cyan-200 hover:border-cyan-200/50"
                   }`}
                 >
-                  <CreditCard className="h-8 w-8 text-gray-dark" />
+                  <img src="/credit card" alt="Credit Card" className="w-8 h-8 object-contain" />
                   <span className="text-sm font-medium text-gray-dark">
                     Credit Card
                   </span>
@@ -107,30 +107,30 @@ const PaymentDetails = ({ amount, onBack, formData }: PaymentDetailsProps) => {
                   onClick={() => setPaymentMethod("upi")}
                   className={`py-4 px-3 rounded-xl flex flex-col items-center gap-2 relative transition-all ${
                     paymentMethod === "upi"
-                      ? "bg-blue-300 border-2 border-blue-400"
-                      : "bg-blue-100 border-2 border-border hover:border-blue-300/50"
+                      ? "bg-cyan-300 border-2 border-cyan-400"
+                      : "bg-cyan-100 border-2 border-border hover:bg-cyan-200 hover:border-cyan-200/50"
                   }`}
                 >
                   {paymentMethod === "upi" && (
-                    <span className="absolute -top-2 -right-2 bg-blue-300 text-white text-xs px-2 py-0.5 rounded-full font-semibold">
+                    <span className="absolute -top-2 -right-2 bg-cyan-300 text-white text-xs px-2 py-0.5 rounded-full font-semibold">
                       RECOMMENDED
                     </span>
                   )}
-                  <div className="text-2xl font-bold text-blue-300">UPI</div>
+                  <img src="/upi" alt="UPI" className="w-8 h-8 object-contain" />
                   <span className="text-sm font-medium text-gray-dark">UPI</span>
                 </button>
               </div>
 
               {/* Thank You Message */}
-              <div className="bg-blue-100 border border-blue-300/30 rounded-xl p-4 flex items-start gap-3">
-                <ThumbsUp className="h-5 w-5 text-blue-300 flex-shrink-0 mt-0.5" />
-                <p className="text-sm text-blue-300 font-medium">
+              <div className="bg-cyan-100 border border-cyan-100/30 rounded-xl p-4 flex items-start gap-3">
+                <ThumbsUp className="h-5 w-5 text-cyan-600 flex-shrink-0 mt-0.5" />
+                <p className="text-sm text-cyan-600 font-medium">
                   Thanks for choosing our preferred mode of payment
                 </p>
               </div>
 
               {/* Payment Options */}
-              <div className="bg-blue-100 rounded-xl p-4 space-y-3">
+              <div className="bg-cyan-100 rounded-xl p-4 space-y-3">
                 <div className="flex justify-center gap-8">
                   <div className="flex flex-col items-center gap-2 cursor-pointer">
                     <div className="w-12 h-12 flex items-center justify-center bg-white rounded-full shadow-md border hover:shadow-lg transition-all">
@@ -194,7 +194,7 @@ const PaymentDetails = ({ amount, onBack, formData }: PaymentDetailsProps) => {
               {/* Submit Button */}
               <Button
                 type="submit"
-                className="w-full h-14 text-lg font-semibold bg-blue-300 hover:bg-blue-400 text-white rounded-xl shadow-lg transition-all hover:scale-[1.02]"
+                className="w-full h-14 text-lg font-semibold bg-cyan-300 hover:bg-cyan-400 text-white rounded-xl shadow-lg transition-all hover:scale-[1.02]"
               >
                 Pledge ₹{totalAmount} / Month
               </Button>
