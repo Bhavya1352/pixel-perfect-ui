@@ -183,10 +183,10 @@ const DonationForm = ({ onProceed }: DonationFormProps) => {
               {/* Contributors Info */}
               <div className="flex items-center justify-center gap-2 pt-2">
                 <div className="flex -space-x-2">
-                  <div className="w-8 h-8 rounded-full bg-cyan-100/20 border-2 border-white" />
-                  <div className="w-8 h-8 rounded-full bg-cyan-100/30 border-2 border-white" />
-                  <div className="w-8 h-8 rounded-full bg-cyan-100/40 border-2 border-white" />
-                  <div className="w-8 h-8 rounded-full bg-cyan-100/50 border-2 border-white" />
+                  <img src="/1" alt="Contributor 1" className="w-8 h-8 rounded-full object-cover border-2 border-white" />
+                  <img src="/2" alt="Contributor 2" className="w-8 h-8 rounded-full object-cover border-2 border-white" />
+                  <img src="/3" alt="Contributor 3" className="w-8 h-8 rounded-full object-cover border-2 border-white" />
+                  <img src="/4" alt="Contributor 4" className="w-8 h-8 rounded-full object-cover border-2 border-white" />
                 </div>
                 <p className="text-sm">
                   <span className="font-bold text-cyan-600">4,21,908</span>{" "}

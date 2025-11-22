@@ -75,7 +75,7 @@ const PaymentDetails = ({ amount, onBack, formData }: PaymentDetailsProps) => {
                   onClick={() => setPaymentMethod("netbanking")}
                   className={`py-4 px-3 rounded-xl flex flex-col items-center gap-2 transition-all ${
                     paymentMethod === "netbanking"
-                      ? "bg-cyan-300 border-2 border-cyan-400"
+                      ? "bg-blue-600 border-2 border-blue-700"
                       : "bg-cyan-100 border-2 border-border hover:bg-cyan-300 hover:border-cyan-300/50"
                   }`}
                 >
@@ -92,7 +92,7 @@ const PaymentDetails = ({ amount, onBack, formData }: PaymentDetailsProps) => {
                   onClick={() => setPaymentMethod("card")}
                   className={`py-4 px-3 rounded-xl flex flex-col items-center gap-2 transition-all ${
                     paymentMethod === "card"
-                      ? "bg-cyan-300 border-2 border-cyan-400"
+                      ? "bg-blue-600 border-2 border-blue-700"
                       : "bg-cyan-100 border-2 border-border hover:bg-cyan-300 hover:border-cyan-300/50"
                   }`}
                 >
@@ -107,17 +107,17 @@ const PaymentDetails = ({ amount, onBack, formData }: PaymentDetailsProps) => {
                   onClick={() => setPaymentMethod("upi")}
                   className={`py-4 px-3 rounded-xl flex flex-col items-center gap-2 relative transition-all ${
                     paymentMethod === "upi"
-                      ? "bg-cyan-300 border-2 border-cyan-400"
+                      ? "bg-blue-600 border-2 border-blue-700"
                       : "bg-cyan-100 border-2 border-border hover:bg-cyan-300 hover:border-cyan-300/50"
                   }`}
                 >
                   {paymentMethod === "upi" && (
-                    <span className="absolute -top-2 -right-2 bg-cyan-300 text-white text-xs px-2 py-0.5 rounded-full font-semibold">
+                    <span className="absolute -top-2 -right-2 bg-blue-600 text-white text-xs px-2 py-0.5 rounded-full font-semibold">
                       RECOMMENDED
                     </span>
                   )}
                   <img src="/upi" alt="UPI" className="w-8 h-8 object-contain" />
-                  <span className="text-sm font-medium text-gray-dark">UPI</span>
+                  <span className="text-sm font-medium text-blue-600">UPI</span>
                 </button>
               </div>
 
