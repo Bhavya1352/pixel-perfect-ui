@@ -119,7 +119,7 @@ const DonationForm = ({ onProceed }: DonationFormProps) => {
 
               {/* Name Field */}
               <div className="relative">
-                <User className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-text h-5 w-5" />
+                <img src="/contact.png" alt="Contact" className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5" />
                 <Input
                   type="text"
                   placeholder="Name *"
@@ -134,7 +134,7 @@ const DonationForm = ({ onProceed }: DonationFormProps) => {
 
               {/* Email Field */}
               <div className="relative">
-                <Mail className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-text h-5 w-5" />
+                <img src="/email.png" alt="Email" className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5" />
                 <Input
                   type="email"
                   placeholder="Email Address *"
@@ -153,7 +153,7 @@ const DonationForm = ({ onProceed }: DonationFormProps) => {
                   <span className="text-2xl">🇮🇳</span>
                   <span className="text-gray-text">+</span>
                 </div>
-                <Phone className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-text h-5 w-5" />
+                <img src="/phone.png" alt="Phone" className="absolute right-4 top-1/2 -translate-y-1/2 h-5 w-5" />
                 <Input
                   type="tel"
                   placeholder="Your Mobile Number *"
