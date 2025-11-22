@@ -111,7 +111,7 @@ const DonationForm = ({ onProceed }: DonationFormProps) => {
                   placeholder="Other Amount"
                   value={customAmount}
                   onChange={(e) => setCustomAmount(e.target.value)}
-                  className="h-14 w-full text-base text-center text-gray-600 font-semibold rounded-xl border-2 border-border focus:border-cyan-100 focus:outline-none px-4"
+                  className="h-14 w-full text-base text-center text-gray-600 font-semibold rounded-xl border-2 border-border focus:border-cyan-100 focus:outline-none px-4 bg-blue-100"
                 />
               </div>
 
