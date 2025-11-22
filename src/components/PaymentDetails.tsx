@@ -75,7 +75,7 @@ const PaymentDetails = ({ amount, onBack, formData }: PaymentDetailsProps) => {
                   onClick={() => setPaymentMethod("netbanking")}
                   className={`py-4 px-3 rounded-xl flex flex-col items-center gap-2 transition-all ${
                     paymentMethod === "netbanking"
-                      ? "bg-primary/20 border-2 border-primary"
+                      ? "bg-blue-200 border-2 border-primary"
                       : "bg-blue-100 border-2 border-border hover:border-primary/50"
                   }`}
                 >
@@ -92,7 +92,7 @@ const PaymentDetails = ({ amount, onBack, formData }: PaymentDetailsProps) => {
                   onClick={() => setPaymentMethod("card")}
                   className={`py-4 px-3 rounded-xl flex flex-col items-center gap-2 transition-all ${
                     paymentMethod === "card"
-                      ? "bg-primary/20 border-2 border-primary"
+                      ? "bg-blue-200 border-2 border-primary"
                       : "bg-blue-100 border-2 border-border hover:border-primary/50"
                   }`}
                 >
@@ -107,7 +107,7 @@ const PaymentDetails = ({ amount, onBack, formData }: PaymentDetailsProps) => {
                   onClick={() => setPaymentMethod("upi")}
                   className={`py-4 px-3 rounded-xl flex flex-col items-center gap-2 relative transition-all ${
                     paymentMethod === "upi"
-                      ? "bg-primary/20 border-2 border-primary"
+                      ? "bg-blue-200 border-2 border-primary"
                       : "bg-blue-100 border-2 border-border hover:border-primary/50"
                   }`}
                 >
