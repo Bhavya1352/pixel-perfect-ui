@@ -70,8 +70,8 @@ const DonationForm = ({ onProceed }: DonationFormProps) => {
                     }}
                     className={`py-4 px-4 rounded-xl text-base font-semibold transition-all ${
                       selectedAmount === 200 && !customAmount
-                        ? "bg-cyan-300 text-white shadow-lg scale-105"
-                        : "bg-cyan-100 border-2 border-border text-gray-dark hover:bg-cyan-200 hover:border-cyan-200"
+                        ? "bg-blue-300 text-white shadow-lg scale-105"
+                        : "bg-white border-2 border-border text-gray-dark hover:bg-blue-100"
                     }`}
                   >
                     ₹200<span className="text-sm">/mo</span>
@@ -84,8 +84,8 @@ const DonationForm = ({ onProceed }: DonationFormProps) => {
                     }}
                     className={`py-4 px-4 rounded-xl text-base font-semibold transition-all ${
                       selectedAmount === 300 && !customAmount
-                        ? "bg-cyan-300 text-white shadow-lg scale-105"
-                        : "bg-cyan-100 border-2 border-border text-gray-dark hover:bg-cyan-200 hover:border-cyan-200"
+                        ? "bg-blue-300 text-white shadow-lg scale-105"
+                        : "bg-white border-2 border-border text-gray-dark hover:bg-blue-100"
                     }`}
                   >
                     ₹300<span className="text-sm">/mo</span>
@@ -98,8 +98,8 @@ const DonationForm = ({ onProceed }: DonationFormProps) => {
                     }}
                     className={`py-4 px-4 rounded-xl text-base font-semibold transition-all ${
                       selectedAmount === 500 && !customAmount
-                        ? "bg-cyan-300 text-white shadow-lg scale-105"
-                        : "bg-cyan-100 border-2 border-border text-gray-dark hover:bg-cyan-200 hover:border-cyan-200"
+                        ? "bg-blue-300 text-white shadow-lg scale-105"
+                        : "bg-white border-2 border-border text-gray-dark hover:bg-blue-100"
                     }`}
                   >
                     ₹500<span className="text-sm">/mo</span>
@@ -111,9 +111,11 @@ const DonationForm = ({ onProceed }: DonationFormProps) => {
                   placeholder="Other Amount"
                   value={customAmount}
                   onChange={(e) => setCustomAmount(e.target.value)}
-                  className="h-14 w-full text-base text-center text-gray-600 font-semibold rounded-xl border-2 border-border focus:border-cyan-100 focus:outline-none px-4 bg-blue-100"
+                  className="h-14 w-full text-base text-center text-gray-600 font-semibold rounded-xl border-2 border-border focus:border-cyan-100 focus:outline-none px-4 bg-cyan-100"
                 />
               </div>
+
+              <div className="pt-4"></div>
 
               {/* Name Field */}
               <div className="relative">
