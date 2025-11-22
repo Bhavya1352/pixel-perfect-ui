@@ -71,7 +71,7 @@ const DonationForm = ({ onProceed }: DonationFormProps) => {
                     className={`py-4 px-4 rounded-xl text-base font-semibold transition-all ${
                       selectedAmount === 200 && !customAmount
                         ? "bg-blue-300 text-white shadow-lg scale-105"
-                        : "bg-white border-2 border-border text-gray-dark hover:bg-blue-100"
+                        : "bg-white border-2 border-border text-gray-dark hover:bg-cyan-200"
                     }`}
                   >
                     ₹200<span className="text-sm">/mo</span>
@@ -85,7 +85,7 @@ const DonationForm = ({ onProceed }: DonationFormProps) => {
                     className={`py-4 px-4 rounded-xl text-base font-semibold transition-all ${
                       selectedAmount === 300 && !customAmount
                         ? "bg-blue-300 text-white shadow-lg scale-105"
-                        : "bg-white border-2 border-border text-gray-dark hover:bg-blue-100"
+                        : "bg-white border-2 border-border text-gray-dark hover:bg-cyan-200"
                     }`}
                   >
                     ₹300<span className="text-sm">/mo</span>
@@ -99,7 +99,7 @@ const DonationForm = ({ onProceed }: DonationFormProps) => {
                     className={`py-4 px-4 rounded-xl text-base font-semibold transition-all ${
                       selectedAmount === 500 && !customAmount
                         ? "bg-blue-300 text-white shadow-lg scale-105"
-                        : "bg-white border-2 border-border text-gray-dark hover:bg-blue-100"
+                        : "bg-white border-2 border-border text-gray-dark hover:bg-cyan-200"
                     }`}
                   >
                     ₹500<span className="text-sm">/mo</span>
@@ -111,7 +111,7 @@ const DonationForm = ({ onProceed }: DonationFormProps) => {
                   placeholder="Other Amount"
                   value={customAmount}
                   onChange={(e) => setCustomAmount(e.target.value)}
-                  className="h-14 w-full text-base text-center text-gray-600 font-semibold rounded-xl border-2 border-border focus:border-cyan-100 focus:outline-none px-4 bg-cyan-100"
+                  className="h-14 w-full text-base text-center text-gray-600 font-semibold bg-cyan-100 border-b-2 border-black focus:border-cyan-100 focus:outline-none px-4"
                 />
               </div>
 
@@ -128,7 +128,7 @@ const DonationForm = ({ onProceed }: DonationFormProps) => {
                     setFormData({ ...formData, name: e.target.value })
                   }
                   required
-                  className="h-14 pl-12 text-base rounded-xl border-2 focus:border-cyan-100"
+                  className="h-14 pl-12 text-base bg-cyan-100 border-b-2 border-black focus:border-cyan-100"
                 />
               </div>
 
@@ -143,7 +143,7 @@ const DonationForm = ({ onProceed }: DonationFormProps) => {
                     setFormData({ ...formData, email: e.target.value })
                   }
                   required
-                  className="h-14 pl-12 text-base rounded-xl border-2 focus:border-cyan-100"
+                  className="h-14 pl-12 text-base bg-cyan-100 border-b-2 border-black focus:border-cyan-100"
                 />
               </div>
 
@@ -162,7 +162,7 @@ const DonationForm = ({ onProceed }: DonationFormProps) => {
                     setFormData({ ...formData, phone: e.target.value })
                   }
                   required
-                  className="h-14 pl-20 pr-12 text-base rounded-xl border-2 focus:border-cyan-100"
+                  className="h-14 pl-20 pr-12 text-base bg-cyan-100 border-b-2 border-black focus:border-cyan-100"
                 />
               </div>
 
