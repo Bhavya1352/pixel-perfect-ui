@@ -76,7 +76,7 @@ const PaymentDetails = ({ amount, onBack, formData }: PaymentDetailsProps) => {
                   className={`py-4 px-3 rounded-xl flex flex-col items-center gap-2 transition-all ${
                     paymentMethod === "netbanking"
                       ? "bg-blue-600 border-2 border-blue-700"
-                      : "bg-cyan-100 border-2 border-border hover:bg-cyan-300 hover:border-cyan-300/50"
+                      : "bg-white border-2 border-border hover:bg-cyan-200 hover:border-cyan-200/50"
                   }`}
                 >
                   <div className="w-8 h-8 flex items-center justify-center">
@@ -93,7 +93,7 @@ const PaymentDetails = ({ amount, onBack, formData }: PaymentDetailsProps) => {
                   className={`py-4 px-3 rounded-xl flex flex-col items-center gap-2 transition-all ${
                     paymentMethod === "card"
                       ? "bg-blue-600 border-2 border-blue-700"
-                      : "bg-cyan-100 border-2 border-border hover:bg-cyan-300 hover:border-cyan-300/50"
+                      : "bg-white border-2 border-border hover:bg-cyan-200 hover:border-cyan-200/50"
                   }`}
                 >
                   <img src="/credit card" alt="Credit Card" className="w-8 h-8 object-contain" />
@@ -108,7 +108,7 @@ const PaymentDetails = ({ amount, onBack, formData }: PaymentDetailsProps) => {
                   className={`py-4 px-3 rounded-xl flex flex-col items-center gap-2 relative transition-all ${
                     paymentMethod === "upi"
                       ? "bg-blue-600 border-2 border-blue-700"
-                      : "bg-cyan-100 border-2 border-border hover:bg-cyan-300 hover:border-cyan-300/50"
+                      : "bg-white border-2 border-border hover:bg-cyan-200 hover:border-cyan-200/50"
                   }`}
                 >
                   {paymentMethod === "upi" && (
