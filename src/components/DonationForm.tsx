@@ -40,6 +40,7 @@ const DonationForm = ({ onProceed }: DonationFormProps) => {
             className="w-full max-w-xl rounded-2xl shadow-lg object-cover"
             loading="eager"
             decoding="async"
+            fetchPriority="high"
           />
         </div>
 
